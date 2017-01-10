@@ -1,4 +1,5 @@
-<div class="well" id={{article.id}}>
+<div class="well">
+  {{#link-to 'article' article.id}}
   <div class="row">
     <div class="col-md-6">
       <img src={{article.image}} alt="Article image"/>
@@ -19,4 +20,5 @@
       </div>
     </div>
   </div>
+  {{/link-to}}
 </div>

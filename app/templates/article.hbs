@@ -1,1 +1,10 @@
-{{outlet}}
+<div class="container">
+  <h2>{{model.title}}</h2>
+  <img src={{model.image}} alt="article image" />
+  <br>
+  <div id="articleBody">
+    <p>by {{model.author}} <small>{{model.timestamp}}</small></p>
+    <br>
+    <p>{{model.text}}</p>
+  </div>
+</div>
