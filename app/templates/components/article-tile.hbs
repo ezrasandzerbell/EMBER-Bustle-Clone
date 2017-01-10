@@ -1,1 +1,22 @@
-{{yield}}
+<div class="well" id={{article.id}}>
+  <div class="row">
+    <div class="col-md-6">
+      <img src={{article.image}} alt="Article image"/>
+    </div>
+    <div class="col-md-6">
+      <h3>{{article.title}}</h3>
+      <p>
+        {{article.text}}
+      </p>
+      <br>
+      <div class="row">
+        <div class="col-md-9">
+          <p>By {{article.author}}</p>
+        </div>
+        <div class="col-md-3">
+          <p>{{article.timestamp}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
