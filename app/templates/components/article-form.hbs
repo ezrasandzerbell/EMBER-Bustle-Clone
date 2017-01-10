@@ -1,0 +1,32 @@
+<div class="container">
+  <h1> Create a new article </h1>
+  <br>
+  <form>
+    <div class="form-group">
+      <label for="title">Title</label>
+      {{input value=title id="title"}}
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image</label>
+      {{input value=image id="image"}}
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=author id="author"}}
+    </div>
+
+    <div class="form-group">
+      <label for="text">Text</label>
+      {{input value=text id="text"}}
+    </div>
+
+    <div class="form-group">
+      <label for="timestamp">Timestamp</label>
+      {{input value=timestamp id="timestamp"}}
+    </div>
+
+    <button {{action 'saveArticle'}}>Save</button>
+  </form>
+</div>
